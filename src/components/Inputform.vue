@@ -51,7 +51,20 @@
 export default {
   data() {
     return {
-      items: ["Web", "SA", "ML", "อื่นๆ"],
+      items: [
+        "Web",
+        "SA",
+        "ML",
+        "Math",
+        "AI",
+        "Android",
+        "IOS",
+        "Blockchain",
+        "Cloud",
+        "Big Data",
+        "Data Science",
+        "Statistic",
+      ],
       subject: "",
       content: "",
       valid: true,
