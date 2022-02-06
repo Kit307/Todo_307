@@ -13,17 +13,17 @@
               outlined
               color="#0277BD"
             >
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <div class="text-h5 mb-4 white--text">
-                    {{ i + 1 + "  " }}{{ item.name }}
-                  </div>
-                  <v-list-item-subtitle class="white--text">{{
-                    "รายละเอียด  :" + item.conten
-                  }}</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-
+              <v-card-text class="white--text">
+                <div class="text-h5 mb-4">
+                  <span class=""
+                    ><v-btn color="success" fab x-small>
+                      <h1>{{ i + 1 }}</h1>
+                    </v-btn></span
+                  >
+                  {{ "  " + item.name }}
+                </div>
+                <p class="subtitle-1">{{ "รายละเอียด  :" + item.conten }}</p>
+              </v-card-text>
               <v-card-actions>
                 <v-btn
                   rounded
@@ -32,6 +32,11 @@
                 >
                   Delete
                 </v-btn>
+                <v-card-text>
+                  <v-chip class="deep-purple accent-4 white--text">{{
+                    item.date
+                  }}</v-chip>
+                </v-card-text>
               </v-card-actions>
             </v-card>
           </v-hover>
@@ -47,17 +52,17 @@
               outlined
               color=""
             >
-              <v-list-item three-line>
-                <v-list-item-content>
-                  <div class="text-h5 mb-4">
-                    {{ i + 1 + "  " }}{{ item.name }}
-                  </div>
-                  <v-list-item-subtitle>{{
-                    "รายละเอียด  :" + item.conten
-                  }}</v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-
+              <v-card-text class="black--text">
+                <div class="text-h5 mb-4">
+                  <span class=""
+                    ><v-btn color="success" fab x-small>
+                      <h1>{{ i + 1 }}</h1>
+                    </v-btn></span
+                  >
+                  {{ "  " + item.name }}
+                </div>
+                <p class="subtitle-1">{{ "รายละเอียด  :" + item.conten }}</p>
+              </v-card-text>
               <v-card-actions>
                 <v-btn rounded color="primary" @click="com(i)">
                   complete
@@ -69,6 +74,11 @@
                 >
                   Delete
                 </v-btn>
+                <v-card-text>
+                  <v-chip class="deep-purple accent-4 white--text">{{
+                    item.date
+                  }}</v-chip>
+                </v-card-text>
               </v-card-actions>
             </v-card>
           </v-hover>
